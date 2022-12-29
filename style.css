@@ -90,12 +90,15 @@ body {
 }
 
 #hero-image {
-    margin-top: 50px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50vh;
-    background-image: url('./assets/image-hero-portrait.png');
+
+    background-image: url('./assets/image-hero-landscape.webp');
     background-size: contain;
-    /* background-position-x: right; */
+    background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
     margin: 50px auto;
@@ -185,11 +188,13 @@ body {
 }
 
 #footer {
-    padding: 20vh;
+    margin-top: 50px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 
