@@ -12,9 +12,7 @@ body {
     font-family: 'Epilogue', sans-serif, Arial, Helvetica;
     padding: 0;
     margin: 0;
-    color: var(--dark-blue);
-
-}
+    color: var(--dark-blue);}
 
 header {
     margin-top: 5vh;
@@ -42,10 +40,11 @@ header {
 
 #solution-arc {
     position: relative;
-    width: 42vw;
-    left: 42vw;
-    top: 8vh;
-    /* bottom: 50px; */
+    width: calc(15% + 100px);
+    left: 43%;
+    right: 45%;
+    top: 6vh;
+    bottom: -50%;
 }
 
 #headline {
@@ -95,7 +94,7 @@ header {
     background-image: url('./assets/image-hero-landscape.webp');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 240px;
 }
 
@@ -130,24 +129,37 @@ header {
     background-color: var(--dark-blue);
     border-radius: 15px;
     color: var(--cream);
-    margin-top: 300px;
+    margin-top: 200px;
     padding-bottom: 15%;
 }
 
 #customer-photo-div {
     background-image: url('./assets/pattern-blur.svg');
     /* background-size: contain; */
-    background-size: 0%;
+    background-size: contain;
     position: relative;
     top: calc(5vh - 200px);
     display: flex;
     justify-content: center;
 }
 
+#customer-feedback-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 10px double orange;
+    align-items: center;
+}
+
+#arc-2 {
+    background-color: #fff;
+    margin-top: -25vh;
+}
+
 #testimonial {
     font-weight: 400;
     text-align: center;
-    margin-top: -200px;
+    margin-top: 00px;
 }
 
 #testimonial p {
@@ -217,4 +229,10 @@ header {
     justify-content: space-between;
     width: 35%;
     margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: #ea99ca;
+    }
 }
