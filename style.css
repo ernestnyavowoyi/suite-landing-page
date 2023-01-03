@@ -156,7 +156,7 @@ header {
 }
 
 #arc-2 {
-    background-color: #fff;
+    /* background-color: #fff; */
     margin-top: -25vh;
 }
 
@@ -185,6 +185,8 @@ header {
     letter-spacing: 0.09px;
     padding: 0 13%;
 }
+
+
 
 #customer-name {
     margin-top: 5vh;
@@ -239,9 +241,7 @@ MEDIA QUERIES
 */
 
 @media (min-width: 768px) {
-    body {
-        background-color: #ea4abc;
-    }
+   
     #solution-arc {
         min-width: 30vw;
         left: 30vw;
@@ -319,4 +319,73 @@ MEDIA QUERIES
         display: inline-flex;
         width: 15%;
     }
+}
+
+@media (min-width: 1440px) {
+    
+    #main-section {
+        grid-template-columns: 2fr 0.5fr 2fr;
+    }
+
+    #headline, #headline strong {
+        font-size: 72px;
+        line-height: 78px;
+        letter-spacing: -1px;
+    }
+
+    #solution-arc {
+        left: 29%;
+        width: 20% !important;
+        max-width: 20vw !important;
+        min-width: 20vw !important;
+    }
+
+    #info-1 {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        width: 35%;
+    }
+
+    #hero-bg {
+        background: url('./assets/image-hero-portrait@2x.webp');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -37vw;
+    }
+
+    #stats {
+        flex-direction: column;
+        width: auto;
+    }
+
+    #customer-feedback-images {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #customer-feedback {
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+    }
+
+    #testimonial, #customer-name, #work, #quote {
+        text-align: left !important;
+    }
+
+    #quote {
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0.1px;
+        color: var(--cream);
+        padding: 0;
+        width: 400px;
+    }
+
+    #footer {
+        padding: 5vh 20px;
+    }
+
 }
