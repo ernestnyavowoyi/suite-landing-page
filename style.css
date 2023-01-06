@@ -9,11 +9,21 @@
     --cream-white: #FAF8F6;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Epilogue', sans-serif, Arial, Helvetica;
     padding: 0;
     margin: 0;
     color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    flex: 1 0 auto;
 }
 
 a {
@@ -21,10 +31,11 @@ a {
 }
 
 header {
-    margin-top: 5vh;
+    padding-top: 5rem;
+    background-color: #4a9dff;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 50px;
     padding: 0 0;
 
@@ -246,6 +257,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    flex-shrink: 0;
 }
 
 #copyright {
@@ -354,10 +366,6 @@ header {
 
 @media (min-width: 1024px) {
 
-    header {
-        justify-content: space-between;
-    }
-
     #a-super-solution {
         font-size: 72px;
         line-height: 78px;
@@ -382,19 +390,18 @@ header {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: nowrap;
     }
 
     #hero-image-div {
         margin-top: 2em;
         height: 38rem;
-        border: 2px solid red;
         width: 22rem;
         position: relative;
         left: 2.7rem;
         top: 0.2rem;
-        background-image: url('./assets/image-hero-portrait.png');
+        background-image: url('./assets/image-hero-portrait@2x.png');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -404,11 +411,16 @@ header {
 
     #stats {
         grid-area: 1/3/1/4;
-        padding: 0 !important;
+        margin: 0 4rem !important;
         flex-direction: column;
-        justify-content: stretch;
-        align-items: flex-end;
+        justify-content: space-around;
+        align-items: flex-start;
         margin-top: 0rem !important;
+        text-align: left !important;
+    }
+
+    #stats h3, #stats p {
+        text-align: left;
     }
 
     /* Customer Feedback */
@@ -525,5 +537,9 @@ header {
     #client-position {
         margin-top: 0;
         text-align: left;
+    }
+
+    #social-links a:hover {
+        opacity: 0.5;
     }
 }
