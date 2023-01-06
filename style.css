@@ -382,7 +382,12 @@ header {
     }
 
     #content {
-        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        margin: 10rem auto;
+        align-items: stretch;
     }
 
     #a-super-solution {
@@ -453,7 +458,7 @@ header {
         justify-content: flex-start;
         align-items: flex-end;
         margin-top: 0 !important;
-        padding: 0rem;
+        padding: 0;
     }
 
 
@@ -479,7 +484,16 @@ header {
         padding: 12rem 0 2rem 0;
         width: 100%;
         display: flex;
+        justify-content: flex-start;
+
+        align-items: center;
+    }
+
+    #footer-items {
+        display: flex;
         justify-content: space-between;
+        width: 80%;
+        margin: -10rem auto;
         align-items: center;
     }
 
