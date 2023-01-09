@@ -25,6 +25,7 @@ body {
 
 #content {
     flex: 1 0 auto;
+    margin: 2rem auto;
 }
 
 #footer-with-customer-feedback {
@@ -36,13 +37,12 @@ a {
 }
 
 header {
-    padding-top: 1rem;
+    /* padding-top: 0rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
     padding: 0 0;
-
 }
 
 
@@ -283,7 +283,7 @@ header {
     body {
         display: flex;
         flex-direction: column;
-
+        
         justify-content: space-between;
         padding: 2rem;
         
@@ -386,7 +386,7 @@ header {
         flex-direction: column;
         justify-content: space-between;
         width: 80%;
-        margin: 10rem auto;
+        margin: 3rem auto;
         align-items: stretch;
     }
 
