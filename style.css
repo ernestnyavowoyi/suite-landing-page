@@ -169,7 +169,7 @@ header {
     background-color: var(--dark-blue);
     border-radius: 15px;
     color: var(--cream);
-    margin-top: 24rem;
+    margin-top: -10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -287,7 +287,7 @@ header {
 
 @media(min-width: 375px) {
     #content {
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
 }
 
@@ -299,9 +299,19 @@ header {
         flex-direction: column;
         
         justify-content: space-between;
-        padding: 2rem;
-        
+        padding: 0;
     }
+
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        margin: 3rem auto;
+        align-items: stretch;
+    }
+
 
     #main-section {
         display: grid;
@@ -390,24 +400,67 @@ header {
         left: -5%;
     }
 
+    #footer-with-customer-feedback {
+        padding: 0 !important;
+        margin: -40% 0 0 0 !important;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #customer-feedback {
+        border-radius: 15px;
+        color: var(--cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 10em auto 0 auto;
+        z-index: 10;
+
+        height: auto !important;
+        /* width: 80%; */
+        position: relative;
+        top: 30%;
+    }
+
     #footer {
         /* border: 2px solid red; */
-        padding: 1rem 0;
+
+        /* background-color: orange; */
+        padding: 35rem 0 2rem 0;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        z-index: 0;
+    }
+
+
+    #footer-items {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 90%;
+        margin: 0rem auto;
         align-items: center;
     }
 
     #copyright {
-        margin: 2rem auto;
+        margin: 0 auto;
     }
-    
+
     #social-links {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-around;
         width: 6rem;
-        margin: 0 auto;
+        margin: 0;
     }
 
 }
@@ -457,15 +510,15 @@ header {
         align-items: flex-start;
         flex-wrap: nowrap;
         margin: 0 auto;
-        margin-top: -3rem;
+        margin-top: 3rem;
     }
 
     #headline-container {
         width: 100%;
         z-index: 10;
         display: grid;
-        grid-template-columns: 3fr 1.5fr;
-        align-items: center;
+        grid-template-columns: 3fr 1.8fr;
+        align-items: flex-start;
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: nowrap;
@@ -485,6 +538,9 @@ header {
     #hero-image-div {
         margin-top: -0.5rem;
         height: 20rem;
+        left: -20%;
+        justify-self: left;
+        align-self: flex-start;
     }
 
     #hero-image-div img {
@@ -532,7 +588,7 @@ header {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        margin-top: 0 !important;
+        margin-top: 20em !important;
         padding: 0;
     }
 
@@ -559,9 +615,16 @@ header {
         padding: 12rem 0 2rem 0;
         width: 100%;
         display: flex;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
 
         align-items: center;
+
+        /* display: flex; */
+        flex-direction: row;
+        /* align-items: center; */
+        justify-content: space-between;
+        text-align: center;
+
     }
 
     #footer-items {
@@ -684,19 +747,6 @@ header {
         opacity: 0.5;
     }
 
-    #footer {
-        width: 100%;
-    }
-
-
-    #footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-    }
-    
     #copyright {
         margin: 2rem auto;
     }
