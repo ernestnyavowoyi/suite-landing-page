@@ -537,7 +537,7 @@ header {
 
     #hero-image-div {
         margin-top: -0.5rem;
-        height: 20rem;
+        height: auto;
         left: -2%;
         justify-self: left;
         align-self: flex-start;
@@ -588,7 +588,7 @@ header {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        margin-top: 10em !important;
+        margin-top: 12em !important;
         padding: 0;
     }
 
@@ -778,6 +778,7 @@ header {
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: nowrap;
+        margin-bottom: -15rem;
     }
 
 
@@ -812,7 +813,7 @@ header {
     #hero-image-div {
         border-radius: 1rem;
         margin-top: -3.0rem;
-        height: 20rem;
+        height: auto;
         width: 100%;
         position: relative;
         /* left: -3.5rem; */
@@ -845,5 +846,11 @@ header {
     #stats h3, #stats p {
         text-align: left;
     }
+
+    #footer-with-customer-feedback {
+        margin-top: 15rem !important;
+        padding: 0;
+    }
+
 }
 
