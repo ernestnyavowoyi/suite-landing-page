@@ -289,6 +289,17 @@ header {
     #content {
         padding: 0 2rem;
     }
+
+    #stats {
+        z-index: 10;
+        /* justify-self: end; */
+        /* grid-area: 1/2/1/3; */
+        margin: 2rem 0 30rem 0 !important;
+        /* flex-direction: column; */
+        /* justify-content: space-around; */
+        /* align-items: flex-start; */
+        text-align: left !important;
+    }
 }
 
 
@@ -390,6 +401,8 @@ header {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        margin: 2rem 0 0rem 0 !important;
+
     }
 
     #blur-pattern {
@@ -477,7 +490,7 @@ header {
         flex-direction: column;
         justify-content: space-between;
         width: 80%;
-        margin: 3rem auto;
+        margin: 3rem auto 0 auto;
         align-items: stretch;
     }
 
@@ -551,7 +564,7 @@ header {
         left: -2rem;
     }
 
-    #stats {
+    /* #stats {
         grid-area: 1/2/1/3;
         margin: 0 2rem !important;
         flex-direction: column;
@@ -559,21 +572,22 @@ header {
         align-items: center;
         margin-top: 0rem !important;
         text-align: left !important;
-        z-index: 10;
-    }
-
+    } */
+    
     #stats h3, #stats p {
         text-align: left;
     }
     
     #stats {
+        z-index: 10;
         justify-self: end;
         grid-area: 1/2/1/3;
-        margin: 0 1rem !important;
+        /* margin: 0 1rem !important; */
+        margin: 2rem auto 0 auto !important;
+
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        margin-top: 0rem !important;
         text-align: left !important;
     }
 
@@ -588,7 +602,7 @@ header {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        margin-top: 12em !important;
+        margin-top: 6em !important;
         padding: 0;
     }
 
@@ -762,7 +776,7 @@ header {
 
 @media (min-width: 1440px) {
     #content {
-        margin-bottom: 12rem;
+        margin-bottom: 6rem;
     }
 
     #solution-arc {
@@ -835,7 +849,7 @@ header {
     
     #stats {
         grid-area: 1/3/1/4;
-        margin: 0 4rem !important;
+        margin: 0 auto 4rem auto !important;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
