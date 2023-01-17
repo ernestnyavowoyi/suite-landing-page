@@ -782,7 +782,7 @@ header {
     #solution-arc {
         width: auto;
         top: 3.5rem;
-        left: 14rem;
+        left: 18.5rem;
         z-index: 10;
     }
 
@@ -790,9 +790,10 @@ header {
         display: grid;
         grid-template-columns: 1fr 0.2fr;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: nowrap;
-        margin-bottom: -15rem;
+        margin-bottom: 0;
+        margin-top: -5rem;
     }
 
 
@@ -811,6 +812,12 @@ header {
     #a-super-solution {
         line-height: 78px;
         letter-spacing: -1px;
+        font-size: 72px;
+        font-weight: 400;
+    }
+
+    #a-super-solution strong {
+        font-weight: 700;
     }
     
     #marketing-info {
@@ -827,11 +834,12 @@ header {
     #hero-image-div {
         border-radius: 1rem;
         margin-top: -3.0rem;
-        height: auto;
+        max-height: 14rem;
+        height: 10rem;
         width: 100%;
         position: relative;
         /* left: -3.5rem; */
-        left: 2rem;
+        left: 3.5rem;
         top: 1.5rem;
         /* background-image: url('./assets/image-hero-portrait.png'); */
         /* background-size: cover; */
@@ -853,7 +861,7 @@ header {
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        margin-top: 0rem !important;
+        margin-top: 10rem !important;
         text-align: left !important;
     }
 
