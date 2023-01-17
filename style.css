@@ -826,33 +826,26 @@ header {
         line-height: 32px;
         letter-spacing: 0.1px;
         margin-top: -3rem !important;
-        width: 90%;
+        width: 80%;
     }
-
-
 
     #hero-image-div {
         border-radius: 1rem;
         margin-top: -3.0rem;
-        max-height: 14rem;
-        height: 10rem;
+        max-height: 2rem;
+        height: 2rem;
         width: 100%;
         position: relative;
-        /* left: -3.5rem; */
         left: 3.5rem;
         top: 1.5rem;
-        /* background-image: url('./assets/image-hero-portrait.png'); */
-        /* background-size: cover; */
-        /* background-position: center center; */
-        /* background-repeat: no-repeat; */
         z-index: 0;
         grid-column: 2/2;
     }
 
     #hero-image-div img {
         width: 100%;
-        height: auto;
-        /* border: 2px solid red; */
+        max-width: 350px;
+        max-height: 600px;
     }
     
     #stats {
@@ -869,9 +862,36 @@ header {
         text-align: left;
     }
 
+    #customer-feedback-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #curved-line-2 {
+        margin-bottom: -5rem;
+        left: 1rem;
+    }
+
     #footer-with-customer-feedback {
-        margin-top: 15rem !important;
+        margin-top: 0 !important;
         padding: 0;
+    }
+
+    #testimonial-div {
+        width: 50%;
+    }
+
+    #it-just-works strong {
+        font-weight: 700;
+    }
+
+
+    #quote {
+        padding-right: 20px;
+        width: 40%;
+        width: 80% !important;
+        margin-bottom: 2.5rem;
     }
 
 }
